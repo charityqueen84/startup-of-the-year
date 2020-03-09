@@ -1,0 +1,49 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  background: url(header.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+  font-size: rem;
+  color: #e2dbdb;
+}
+
+hr {
+  border-color: #f05f44;
+  border-width: 3px;
+  max-width: 65px;
+}
+
+.buffer {
+  /* class we created to make space between words and buttons*/
+  height: 10rem;
+}
+
+.btn {
+  /* Here we're customizing a bootstrap class*/
+  font-weight: 700;
+  border-radius: 300px; /* Makes button more circular*/
+  text-transform: uppercase;
+}
+
+.btn-xl {
+  /* This is a class we created*/
+  padding: 1rem 2rem;
+}
+
+.btn-primary {
+  background-color: #f05f44;
+  border-color: #f05f44;
+}
+.btn-primary:hover {
+  background-color: #ee4b08;
+  border-color: #ee4b08;
+  border-width: 4px;
+}

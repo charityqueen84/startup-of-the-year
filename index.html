@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Startup</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!-- Your own stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="container d-flex align-items-center h-100"> <!--d flex enables flex box. -->
+      <!--In order to get the button below the line and all centered, we wrapped those things in a div and then divided them into sections-->
+      <div class="row">
+        <header class="text-center col-12"> <!--We have to add col 12 here and in section so the line and button center and use the whole width of the page - the 12 part grid. Otherwise, they're both not centered. Now if you inspect, you can see it contains whole amount of container (highlighted in blue)-->
+        <h1 class="text-uppercase">
+          <strong>The biggest startup event of the year</strong>
+        </header>
+        <div class="buffer col-12"></div> <!--for space between words and button-->
+        <section class="text-center col-12">
+          <hr />
+        </h1>
+        <a href="https://mailchi.mp/023451e97090/ztmstudents"><button class="btn btn-primary btn-xl">Find out more</button> </a>
+      </section>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!--To get the text and button in the middle of the image, we need to use Flex
+   by using d flex class. look on bootstrap site. We need align-items. But it doesn't
+  work. Why not? Inspect - We have the container and then the body.
+Everything is in container, and we actually are aligning items in the center, 
+because the container is not the full page. It's only the top part. The container
+is not fully covering the page. In css, in body, we have height at 100%
+We need to tell container that I want you to span the entire height of page.
+so we add h-100 (stands for height 100)-->
